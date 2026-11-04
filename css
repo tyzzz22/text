@@ -1,0 +1,181 @@
+/* ==========================================================
+   東協廣場報導專用外部樣式表 (css/hw07.css)
+   對應 HW07 需求：將所有樣式移至獨立檔案，並以類別對應原行內樣式
+   ========================================================== */
+
+/* 元素選擇器：設定整頁基本字型、行高、字體顏色與背景色 */
+body {
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+    line-height: 1.8;
+    color: #333333;
+    background-color: #f8f9fa;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 元素選擇器：設定主標題樣式 */
+h1 {
+    color: #1a5276;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 元素選擇器：設定章節標題樣式 */
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+h3 {
+    color: #16a085;
+}
+
+/* 元素選擇器：段落與清單設定間距 */
+p, ul, ol {
+    margin-bottom: 15px;
+}
+
+/* 元素選擇器：頁首樣式設定 */
+header {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+/* 元素選擇器：導覽列樣式與區塊外觀 */
+nav {
+    background-color: #ebf5fb;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2980b9;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav li {
+    margin: 0;
+}
+
+/* 導覽與連結：使用 :hover 與 :focus-visible 呈現滑鼠移入和鍵盤焦點提示 */
+nav a {
+    color: #2980b9;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover, nav a:focus-visible {
+    background-color: #d4e6f1;
+    color: #1b4f72;
+    outline: 2px solid #2980b9;
+}
+
+/* 主要內容與區段樣式 */
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* 類別選擇器：建立共用的筆記/高亮區塊外觀 */
+.note-box {
+    background-color: #fef9e7;
+    border: 1px solid #f9e79f;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+/* 對應原 HW06 的三處行內樣式類別化處理 */
+.reading-focus {
+    background-color: #fcf3cf;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.report-disclaimer {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.route-note {
+    font-weight: bold;
+    color: #117864;
+}
+
+/* 表格 CSS 樣式：設定邊框、內距與表頭背景 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #d5dbdb;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #ebf5fb;
+    color: #1a5276;
+}
+
+/* 圖片與媒體樣式：使用 max-width 保持比例，避免超出內容區 */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.media-container iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 315px;
+    border: 0;
+    border-radius: 6px;
+}
+
+/* ID 選擇器：設定補充區塊 (aside) 的專屬外觀與邊框 */
+#tips {
+    background-color: #e8f8f5;
+    border: 1px solid #a3e4d7;
+    border-left: 5px solid #16a085;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 30px 0;
+}
+
+/* 頁尾樣式 */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    padding: 20px;
+}
